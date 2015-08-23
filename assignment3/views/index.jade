@@ -1,0 +1,42 @@
+doctype html(lang='en')
+head
+    meta(charset='UTF-8')
+    |   
+    title Welcome to Teen Connect!!
+    |   
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul.pages
+      .chat.page
+        .chatArea
+          ul.messages
+          | &#x9;&#x9; 
+          div
+            input.inputMsg(placeholder='Enter Here')
+            | &#x9;  
+            | &#x9; 
+            button#like.likeMsg(style='width:100px;height:60px', value='ðŸ‘')
+              img.image(src='/images/like.png', height='42', width='42')
+      | &#x9;
+      |     
+      li.loginPage
+        .form
+          h3.title Login Name
+          |         
+          input.userName(type='text', maxlength='14')
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    |   
+    script(src='/socket.io/socket.io.js')
+    |   
+    script(src='/javascripts/main.js')
+    |    
+    script.
+      //$("#like").click(function()
+      //	{
+      //$.getScript("main.js", function(){
+      //console.log("Shashank");
+      //sendLike();
+      // alert("Script loaded and executed.");
+      // Use anything defined in the loaded script...
+      //});
+      //});
